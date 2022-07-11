@@ -38,7 +38,7 @@ int main() {
 		int now = q.top().sc;
 		int dis = -q.top().fs;
 		q.pop();
-		if (arr[now].sc < dis) {
+		if (arr[now].sc < dis) { //어차피 최소비용으로 못갈때처리
 			continue;
 		}
 		rep(i, v[now].size()) {
