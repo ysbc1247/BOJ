@@ -1,0 +1,3 @@
+#include<bits/stdc++.h>
+using namespace std;int main(){int n,m,a(1); cin>>n>>m;vector<int>v(n,2);if(m==1){v[0]=0;m-=1;}if(m==2){v[0]=0,v[1]=0;m-=2;}if(m==3){if(n==4){cout<<"2 7 4 1"; return 0;}else{v[0]=0;v[1]=0;v[n-1]=0;m-=3;}}else if(m%4==1){v[n-m+1]=0;a=n-m+3;m-=1;}else if(m%4==3){v[0]=0;v[2]=0;v[n-1]=0;a=2;m-=3;}else if(m%4==2){v[0]=0;a=2;m-=2;}while(m){m-=4;v[a]=0;v[a+1]=0;a+=4;}for(auto i:v){cout<<i<<' ';}
+}
