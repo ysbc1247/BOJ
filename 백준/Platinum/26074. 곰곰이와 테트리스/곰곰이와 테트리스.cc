@@ -14,10 +14,5 @@ int main() {
     if (n * m == 2) {
         cout << "ChongChong"; return 0;
     }
-    if (n * m == 5) {
-        if (v[0] == v[8]) {
-            cout << "ChongChong"; return 0;
-        }
-    }
     cout << "GomGom";
 }
